@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Sri Abirami</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f0f4f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #1f3b73;
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .profile-container {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .profile-picture {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
+        }
+
+        .header-content {
+            text-align: center;
+            flex: 1;
+        }
+
+        header h1 {
+            font-size: 2rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 5px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        .section-content {
+            max-width: 900px;
+            margin: 3rem auto;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-content h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .section-content p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="profile-container">
+            <img src="C:\Users\SRIABIRAMI S\Downloads\abi_pic.jpg" alt="Profile Picture"
+                class="profile-picture">
+        </div>
+        <div class="header-content">
+            <h1>Sri Abirami S</h1>
+            <p>Web Developer & AI Enthusiast</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showSection('about')">About</a></li>
+            <li><a href="#" onclick="showSection('education')">Education</a></li>
+            <li><a href="#" onclick="showSection('skills')">skills</a></li>
+            <li><a href="#" onclick="showSection('languages')">Languages</a></li>
+            <li><a href="#" onclick="showSection('Projects')">Projects</a></li>
+            <li><a href="#" onclick="showSection('resume')">Resume</a></li>
+
+
+
+        </ul>
+    </nav>
+
+    <section id="about" class="section-content">
+        <h2>About Me</h2>
+        <p>I'm a <b>SRI ABIRAMI</b> a junior developer with skills <b>HTML,CSS,JAVA SCRIPT and PYTHON.</b> I specialize
+            in frontend development,creating responsive and user-friendly designs.Currently,I'm pursuing a <b>BCA at
+                M.I.E.T college,TRiCHY</b> intering to build an e-commerece website.passionate about clean and modern
+            web design,my goal is to work at TCS and make an impact in tech industry.</p>
+    </section>
+
+    <section id="education" class="section-content" >
+        <h2>Education</h2>
+        <p>BCA - Bachelor of Computer application at M.I.E.T Arts and Science College in Trichy ( 2023 - 2026 ) Present
+        </p>
+    </section>
+
+    <section id="skills" class="section-content" >
+        <h2>Technical Skills</h2>
+        <p><strong>Programming Languages:</strong></p>
+        <ul>
+            <li>Python</li>
+            <li>Java</li>
+            <li>C</li>
+        </ul>
+
+        <p><strong>Frontend:</strong></p>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+        </ul>
+
+        <p><strong>Database:</strong></p>
+        <ul>
+            <li>MySQL</li>
+        </ul>
+    </section>
+
+    <section id="languages" class="section-content">
+        <h2>Languages</h2>
+        <ul>
+            <li>Tamil</li>
+            <li>English</li>
+        </ul>
+    </section>
+
+    <section id="Projects" class="section-content" >
+        <h2>Projects</h2>
+        <ul>
+            <li><a href="https://demo.nopcommerce.com/" target="_blank">Ecommerce</a></li>
+            <li><a href="https://www.w3schools.com/howto/howto_js_slideshow.asp" target="_blank">Image Slider</a></li>
+            <li><a href="https://colorlib.com/wp/template/portf/" target="_blank">Portfolio</a></li>
+        </ul>
+    </section>
+    <section id="resume" class="section-content">
+
+        <h1>Sri Abirami</h1>
+        <a href="C:\Users\SRIABIRAMI S\Downloads\Sri--Abirami--S-FlowCV-Resume-20250319.pdf" target="_blank">Download Resume</a>
+    </section>
+    <script>
+        function showSection(sectionId) {
+            document.getElementById('about').style.display = (sectionId === 'about') ? 'block' : 'none';
+            document.getElementById('education').style.display = (sectionId === 'education') ? 'block' : 'none';
+            document.getElementById('skills').style.display = (sectionId === 'skills') ? 'block' : 'none';
+            document.getElementById('languages').style.display = (sectionId === 'languages') ? 'block' : 'none';
+            document.getElementById('Projects').style.display = (sectionId === 'Projects') ? 'block' : 'none';
+            document.getElementById('resume').style.display = (sectionId === 'resume') ? 'block' : 'none';
+
+
+        }
+    </script>
+
+    <footer>
+        <p>&copy; 2025 Sri Abirami S. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
